@@ -1,0 +1,423 @@
+.solution_div h2 {
+
+    margin: 35px 0 1px 1px;
+
+}
+
+
+.pre-footer {
+    background: #172646 none repeat scroll 0 0;    
+    overflow: hidden;
+}
+
+
+
+.se-container2{
+
+    height:auto;
+    border-left: 30px solid transparent;
+    border-bottom: 30px solid #00A79B; 
+
+}
+.se-container3{
+
+    height:auto;
+    border-right: 30px solid transparent;
+    border-top: 30px solid #00A79B; 
+
+}
+
+.pre-footer h4 {
+    color: #363b43;
+    font-family: "AvenirNextLTPro-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+.pre-footer .row {
+    margin: 0 auto;
+    max-width: 1170px; }
+.pre-footer p {
+    color: #999;
+    color: #737e90;
+    font-size: 14px;
+    font-family: "AvenirNextLTPro-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 28px; }
+.pre-footer a:hover {
+    color: #4E8EF7;
+    text-decoration: none; }
+.pre-footer span {
+    padding-left: 5px; }
+.pre-footer .col-a {
+    padding-bottom: 15px; }
+@media (min-width: 768px) {
+    .pre-footer .col-a {
+        padding-right: 60px;
+        padding-bottom: 0;
+        border-right: 1px solid #ddd; }
+    .pre-footer .col-b {
+        padding-left: 70px; } }
+
+
+/* Carousel Styles */
+.carousel-indicators .active {
+    background-color: #2980b9;
+}
+
+.carousel-inner img {
+    width: 100%;
+    max-height: 575px
+}
+
+.carousel-control {
+    width: 0;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    background-image: none;
+    background-repeat: no-repeat;
+    text-shadow: none;
+}
+
+.carousel-control.left span {
+    padding: 15px;
+}
+
+.carousel-control.right span {
+    padding: 15px;
+}
+
+.carousel-control .glyphicon-chevron-left, 
+.carousel-control .glyphicon-chevron-right, 
+.carousel-control .icon-prev, 
+.carousel-control .icon-next {
+    position: absolute;
+    top: 45%;
+    z-index: 5;
+    display: inline-block;
+}
+
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .icon-prev {
+    left: 0;
+}
+
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-next {
+    right: 0;
+}
+
+/*.carousel-control.left span,
+.carousel-control.right span {
+    background-color: #000;
+}*/
+
+.carousel-control.left span:hover,
+.carousel-control.right span:hover {
+    opacity: .7;
+    filter: alpha(opacity=70);
+}
+
+/* Carousel Header Styles */
+.header-text {
+    position: absolute;
+    top: 20%;
+    left: 1.8%;
+    right: auto;
+    width: 96.66666666666666%;
+    color: #fff;
+}
+
+ 
+
+.header-text h2 span {
+
+    padding: 10px;
+}
+
+.header-text h3 span {
+    padding: 15px;
+
+    color: seashell;
+}
+
+.btn-min-block {
+    min-width: 170px;
+    line-height: 26px;
+}
+
+.btn-theme {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    margin-right: 15px;
+}
+
+.btn-theme:hover {
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.pre-footer div{
+    float: left;
+    padding: 2px 36px;
+    text-align: center;
+}
+
+.pre-footer a{
+    text-decoration: none;
+    text-align: center;
+}
+
+.pre-footer img{
+    width:50px;
+    height: 50px;
+
+}
+.uparrow { 
+    background-color: #fff;
+    border-radius: 50px;
+    bottom: 27px;
+    cursor: pointer;
+    display: none;
+    height: 39px;
+    position: fixed;
+    right: 32px;
+    width: 40px;
+    z-index: 99999;
+}
+.uparrow i{     bottom: 8px;
+                color: #428BCA;
+                left: 5px;
+                position: relative; }
+.features-block { margin: 3px 7%; padding: 0; text-align: center; transition: all 0.5s ease 0s; z-index: 99999; } .feature-box { border-top: 5px solid transparent; display: inline-block; float: left; height: 169px; margin: 20px 36px; transition: all 0.5s ease 0s; width: 202px; } .feature-box{ border:1px solid #999; } 
+
+.AdvanceAutoParts img {   height: 45px;
+                          margin-top: 13px;
+                          width: 112px;} 
+
+.adesa img{
+    height: 56px;
+    margin-top: 6px;
+    width: 112px;
+}
+
+.Aetna_logo img{ height: 56px; margin-top: 6px; width: 112px; } .BCBS img{ 
+    height: 49px;
+    margin-top: 6px;
+    width: 112px;
+} 
+
+.belk img{
+    height: 60px;
+    margin-top: 5px;
+    width: 102px;
+} 
+
+.comcast img{ height: 56px; margin-top: 6px; width: 112px; } .dte img{ height: 56px; margin-top: 6px; width: 112px; } .excelacom img{ height: 67px; width: 112px; } 
+.hcl img{ height: 56px; margin-top: 6px; width: 112px; } .ibm img{ height: 56px; margin-top: 6px; width: 112px; } 
+.qvc img { 
+    height: 63px;
+    margin-top: 4px;
+    width: 72px;
+} .VW img {   height: 68px;
+              margin-top: 0;
+              width: 76px; }
+
+
+.industryRotate{
+    text-align: center;
+}
+
+.industryRotate > div{
+    width:141px;
+}
+
+.banner_img  img{
+    width:400px;
+}
+.navbar-inverse .navbar-brand img {
+    margin-top: -24px;
+}
+
+.navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-nav > .open ul > a{
+    text-transform: ;
+}
+
+
+ 
+.nav.nav-justified > li > a { position: relative; }
+.nav.nav-justified > li > a:hover,
+.nav.nav-justified > li > a:focus { background-color: transparent; }
+.nav.nav-justified > li > a > .quote {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    opacity: 0;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    background-color: #13c0ba;
+    border-radius: 15px;
+    color: #fff;  
+}
+.nav.nav-justified > li.active > a > .quote { opacity: 1; }
+.nav.nav-justified > li > a > img { box-shadow: 0 0 0 5px #13c0ba; }
+.nav.nav-justified > li > a > img { 
+    max-width: 100%; 
+    opacity: .3; 
+    -webkit-transform: scale(.8,.8);
+    transform: scale(.8,.8);
+    -webkit-transition: all 0.3s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.3s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.nav.nav-justified > li.active > a > img,
+.nav.nav-justified > li:hover > a > img,
+.nav.nav-justified > li:focus > a > img { 
+    opacity: 1; 
+    -webkit-transform: none;
+    transform: none;
+    -webkit-transition: all 0.3s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.3s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.tab-pane .tab-inner { padding: 30px 0 20px; }
+
+@media (min-width: 768px) {
+    .nav.nav-justified > li > a > .quote {
+        left: 163px;
+        top: auto;
+        right: 20px;
+        bottom: 0px;
+    }  
+}
+
+.phone > img{
+    width:548px  !important;
+}
+
+.comments img{
+    width:109px;
+    height:100px;
+}
+
+
+
+.timer-area h2{
+    color:#19B491;
+    margin:2% 0;
+}
+
+
+
+#countdown li {
+ 
+    position: relative;
+}
+#countdown li::before, .effect8::after {
+    border-radius: 100px / 10px;
+    bottom: 10px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    z-index: -1;
+}
+#countdown li::after {
+    left: auto;
+    right: 10px;
+    transform: skew(8deg) rotate(3deg);
+}
+
+
+.content_slide{
+  
+    line-height: 33px;
+    padding: 30px;
+}
+
+.btn_modify{
+    background-color: #8AC441;
+    border-color: #8AC441;
+}
+
+.btn_modify:hover{
+    background-color: #018804;
+}
+/*agenda css */
+
+.navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-nav > .open ul > a{
+    text-transform: ;
+     font-weight: 600;
+}
+
+
+.register_btn{
+ color:#fff !important;
+}
+
+.register_btn:hover{
+ color:#53bce8 !important;
+}
+
+.header-bar {
+    background-color: #666;
+
+}
+.header-bar h1 {
+    color: #fff !important;
+    height: 50px;
+    margin: 0;
+}
+
+
+.visuallyhidden{
+    color: #fff;
+    padding: 2px;
+}
+
+.session-date{
+   margin:20px 0;
+
+}
+.session-date h3{
+    color:#00A79B;
+}
+.session-heading p {
+    color: #467f1a;
+    font-size: 30px !important;
+}
+
+.session-heading > div{
+    border-bottom:4px solid #D53058;margin:0% 0;
+}
+
+.session-heading-g p {
+    color: #000;
+    font-size: 30px !important;
+}
+
+.session-heading-g > div{
+    border-bottom:4px solid #ccc;margin:2% 0;
+}
+
+.session-details h4{
+    color: #00aae7;
+     margin: 0;
+    padding: 0;
+}
+
+.session-details{
+    padding: 0 0 1% 0;
+    border-bottom: 2px solid lightgray;
+    overflow: hidden;
+}
+
+.session-break{
+    margin-top:2%;
+}
+
+.location i{
+    color: #00A79B;
+    margin:0 4px;
+}

@@ -1,0 +1,176 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ---------- FONTAWESOME ---------- */
+/* ---------- http://fortawesome.github.com/Font-Awesome/ ---------- */
+/* ---------- http://weloveiconfonts.com/ ---------- */
+
+@import url(fontawesome.css);
+
+/* ---------- ERIC MEYER'S RESET CSS ---------- */
+/* ---------- http://meyerweb.com/eric/tools/css/reset/ ---------- */
+
+@import url(reset.css);
+
+/* ---------- FONTAWESOME ---------- */
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+@font-face {
+    font-family: hubbleFont;
+    src: url("hubbleFont.otf") format("opentype");
+}
+
+/* ---------- CUSTOM ---------- */
+
+#mainHeading
+{
+    padding-top:40px;
+    font-family:hubbleFont;
+    font-size:28px;
+    font-weight:200;
+    color : #3f92e5;
+}
+
+#mainHeading_main
+{
+    padding-top:80px;
+    font-family:hubbleFont;
+    font-size:40px;
+    font-weight:200;
+    color : #3f92e5;
+}
+
+        #header
+        {
+            width : 100%;
+            height : 65px;
+            background-color:#2D4D64;
+        }
+        .logo 
+        {
+            padding-left:10px;
+            padding-top:5px;
+            float:left !important;
+        }
+        .home
+        {   
+            float : right !important;
+        }
+#subHeading
+{
+    font-family:hubbleFont;
+    font-size:18px;
+    color : #c7c9cc;
+}
+
+#subHeading_main
+{
+    font-family:hubbleFont;
+    font-size:24px;
+    color : #c7c9cc;
+    padding-bottom:60px;
+}
+
+.menuImage:hover
+{
+    opacity:0.6;
+}
+
+/* ---------- GENERAL ---------- */
+
+body {
+	background: #2d4d64 !important;
+	color: #606468;
+  font: 87.5%/1.5em 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+a {
+	color: #eee;
+	text-decoration: none;
+}
+
+a:hover {
+	color : #2687e8;
+}
+
+input {
+	border: none;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5em;
+	padding: 0;
+	-webkit-appearance: none;
+}
+
+p {
+	line-height: 1.5em;
+}
+
+.clearfix { *zoom: 1; } /* For IE 6/7 */
+.clearfix:before, .clearfix:after {
+	display: table;
+	content: "";
+}
+.clearfix:after { clear: both; }
+
+
+/* ---------- LOGIN ---------- */
+
+.login {
+	margin: 50px auto;
+	width: 280px;
+}
+
+.login form span {
+	background-color: #25292e;
+	border-radius: 3px 0px 0px 3px;
+	color: #d7e5f4;
+	display: block;
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	width: 50px;
+}
+
+.login form input {
+	height: 50px;
+}
+
+.login form input[type="text"], input[type="password"] {
+	background-color: #3b4148;
+	border-radius: 0px 3px 3px 0px;
+	color: #969ea7;
+    font-weight:300;
+	margin-bottom: 1em;
+	padding: 0 16px;
+	width: 198px;
+}
+
+.login form input[type="submit"] {
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	background-color: #4290fa;
+	color: #eee;
+	font-weight: bold;
+	margin-bottom: 2em;
+	text-transform: uppercase;
+	width: 280px;
+}
+
+.login form input[type="submit"]:hover {
+	background-color: #1354ad;
+}
+
+.login > p {
+	text-align: center;
+}
+
+.login > p span {
+	padding-left: 5px;
+}

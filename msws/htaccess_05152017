@@ -1,0 +1,152 @@
+Options Includes FollowSymLinks MultiViews
+#Force www:
+RewriteEngine on
+
+# If https send to https://www.
+RewriteCond %{HTTP_HOST} ^miraclesoft.com$ [NC]
+RewriteCond %{HTTPS} on
+RewriteRule ^(.*)$ https://www.miraclesoft.com/$1 [R=301,L]
+# If http send to http://www.
+RewriteCond %{HTTP_HOST} ^miraclesoft.com$ [NC]
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ http://www.miraclesoft.com/$1 [R=301,L]
+#RewriteCond %{HTTP_HOST} ^miraclesoft.com [NC]
+#RewriteRule ^(.*)$ http://www.miraclesoft.com/$1 [L,R=301,NC]
+#Redirect /epl http://www.miraclesoft.com/events/epl-2015.php
+<IfModule mod_expires.c>
+# Enable expirations
+ExpiresActive On 
+# Default directive
+ExpiresDefault "access plus 2 days"
+# My favicon
+ExpiresByType image/x-icon "access plus 1 year"
+# Images
+ExpiresByType image/gif "access plus 2 days"
+ExpiresByType image/png "access plus 2 days"
+ExpiresByType image/jpg "access plus 2 days"
+ExpiresByType image/jpeg "access plus 2 days"
+# CSS
+ExpiresByType text/css "access plus 2 days"
+# Javascript
+ExpiresByType application/javascript "access plus 1 year"
+</IfModule>
+
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(js|css|xml|gz)$">
+    Header append Vary: Accept-Encoding
+  </FilesMatch>
+</IfModule>
+
+
+<IfModule mod_deflate.c>
+# Insert filters
+
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+AddOutputFilterByType DEFLATE application/x-httpd-php
+AddOutputFilterByType DEFLATE application/x-httpd-fastphp
+AddOutputFilterByType DEFLATE image/svg+xml
+
+</IfModule>
+
+Redirect 301 /services/sap-services.php http://www.miraclesoft.com/technologies/sap-services.php
+Redirect 301 /technologies/testing-qa.php http://www.miraclesoft.com/services/testing-qa.php
+Redirect /infra http://www.miraclesoft.com/services/infrastructure-services.php
+Redirect /atlassian http://www.miraclesoft.com/company/atlassian-partnership.php
+redirect 301 /careers/jobs-india.php http://www.miraclesoft.com/careers/open-positions.php
+redirect 301 /careers/jobs-us.php http://www.miraclesoft.com/careers/open-positions.php
+Redirect 301 /ic16workshop http://www.miraclesoft.com/events/ic16-precon-ws.php
+Redirect 301 /emeets http://www.miraclesoft.com/events/executive-management-meets.php
+Redirect 301 /suggest http://www.miraclesoft.com/contact/suggestion-login.php
+Redirect 301 /bringiothome http://www.miraclesoft.com/events/bring-iot-home.php
+Redirect 301 /iotatlanta http://www.miraclesoft.com/events/bring-iot-home-atlanta.php
+Redirect 301 /iotdetroit http://www.miraclesoft.com/events/bring-iot-home-detroit.php
+Redirect 301 /apicharlotte http://www.miraclesoft.com/events/api-connect-user-group-meeting-charlotte.php
+Redirect 301 /iotcharlotte http://www.miraclesoft.com/events/bring-iot-home-charlotte.php
+Redirect 301 /iotdallas http://www.miraclesoft.com/events/bring-iot-home-dallas.php
+Redirect 301 /iotminneapolis http://www.miraclesoft.com/events/bring-iot-home-minneapolis.php
+Redirect 301 /signature http://www.miraclesoft.com/email-signature.php
+Redirect 301 /epl http://www.miraclesoft.com/events/employee-premier-league-2016.php
+Redirect 301 /why/success.php http://www.miraclesoft.com/library/index.php?flag=success
+#ProxyPass /apcloud http://50.62.30.180:9999/apcloud retry=5 acquire=3000 timeout=600 Keepalive=On
+#Redirect 301 /EnrollAPCloudWorkShop http://www.miraclesoft.com/apcloud/general/collegeEnroll.action
+#Redirect 301 /EnrollAPCloudWorkShop http://www.apcloud.com/ac/general/collegeEnroll.action
+Redirect 301 /whoami http://mwdemos.mybluemix.net/whoami
+Redirect 301 /mulesoft http://www.miraclesoft.com/partnerships/mulesoft
+Redirect 301 /company/partnerships.php http://www.miraclesoft.com/partnerships
+Redirect 301 /partners http://www.miraclesoft.com/partnerships
+Redirect 301 /conf http://www.miraclesoft.com/digitalsummit
+#Redirect 301 /ds16 http://www.miraclesoft.com/digitalsummit
+RedirectMatch /ds16/meanhack http://www.miraclesoft.com/digitalsummit/meanhack/
+RedirectMatch /ds16/jobs http://www.miraclesoft.com/digitalsummit/jobfair/job_fair
+#RedirectMatch /ds16/jobs http://millenniumsoftsol.com/jobfair/index-new.php
+RedirectMatch /ds16/ibmtalks http://www.miraclesoft.com/digitalsummit/TechTalks/IBM-innovation-summit
+RedirectMatch /ds16/culturals http://www.miraclesoft.com/digitalsummit/schedule/culturals
+#RedirectMatch /ds16/microsofttalks http://www.miraclesoft.com/conf/AdminLogin
+#RedirectMatch /ds16/agenda http://www.miraclesoft.com/conf/AdminLogin
+RedirectMatch /ds16/venues http://www.miraclesoft.com/digitalsummit/schedule/summit-venues
+RedirectMatch /ds16/microsofttalks http://www.miraclesoft.com/digitalsummit/TechTalks/microsoft-techtalks
+RedirectMatch /ds16/agenda http://www.miraclesoft.com/digitalsummit/schedule/agenda
+RedirectMatch /ds16/innovationsummit http://www.miraclesoft.com/digitalsummit/TechTalks/InnovationSummit
+Redirect 301 /ds16 http://www.miraclesoft.com/digitalsummit
+Redirect 301 /store https://business.landsend.com/store/teammiracle/
+Redirect 301 /interconnect http://www.miraclesoft.com/events/interconnect17
+Redirect 301 /microsoft http://www.miraclesoft.com/partnerships/microsoft
+Redirect 301 /axway http://www.miraclesoft.com/partnerships/axway
+Redirect 301 /technologies/api-management.php http://www.miraclesoft.com/technologies/api
+Redirect 301 /ime https://www.youtube.com/playlist?list=PLvHEcCoZg9xw6nge9T4zUp_Tofp9CkuPb
+Redirect 301 /qa http://www.miraclesoft.com/services/quality-assurance
+Redirect 301 /ic http://www.miraclesoft.com/events/interconnect17
+Redirect 301 /interconnect. http://www.miraclesoft.com/events/interconnect17
+Redirect 301 /pmo http://www.miraclesoft.com/services/project-management-offerings
+Redirect 301 /edi http://www.miraclesoft.com/technologies/b2b
+Redirect 301 /mft http://www.miraclesoft.com/technologies/b2b
+Redirect 301 /technologies/b2b_edi_mft.php http://www.miraclesoft.com/technologies/b2b
+Redirect 301 /b2b http://www.miraclesoft.com/technologies/b2b
+Redirect 301 /scvp http://www.miraclesoft.com/technologies/b2b/mscvp
+
+Redirect 301 /why/sstory7.php http://www.miraclesoft.com/library/CaseStudy/enhanced-visibility-control-global-food-distributor
+Redirect 301 /why/sstory1.php http://www.miraclesoft.com/library/CaseStudy/sap-strategic-sourcing-tier1-automative-supplier
+Redirect 301 /why/sstory2.php http://www.miraclesoft.com/library/CaseStudy/hl7-implementation-healthcare-client
+Redirect 301 /why/sstory3.php http://www.miraclesoft.com/library/CaseStudy/migration-tpec-wtx-health-care-client
+Redirect 301 /why/sstory4.php http://www.miraclesoft.com/library/CaseStudy/transformation-b2b-infra-customer-service-excellence
+Redirect 301 /why/sstory5.php http://www.miraclesoft.com/library/CaseStudy/smart-soa-implementation-fortune-healthcare-client
+Redirect 301 /why/sstory6.php http://www.miraclesoft.com/library/CaseStudy/next-generation-esb-b2b-gateway-global-logistics-provider
+Redirect 301 /why/sstory8.php http://www.miraclesoft.com/library/CaseStudy/automated-dot-net-application-national-retailer
+Redirect 301 /why/sstory9.php http://www.miraclesoft.com/library/CaseStudy/modernization-dot-net-web-portal-energy-solutions-provider
+Redirect 301 /why/bf-ema.php http://www.miraclesoft.com/library/CaseStudy/book-fair-event-mangement-application-global-children-media-firm
+Redirect 301 /why/caa-dgm.php http://www.miraclesoft.com/library/CaseStudy/customer-application-analysis-development
+Redirect 301 /why/ssmrp-ghf.php http://www.miraclesoft.com/library/CaseStudy/self-services-medical-report-portal
+Redirect 301 /why/ete-qa.php http://www.miraclesoft.com/library/CaseStudy/end-to-end-validation-qa-testing
+Redirect 301 /why/as-dlf.php http://www.miraclesoft.com/library/CaseStudy/automated-scripting-data-load-fucntions
+Redirect 301 /why/gpm-b2b.php http://www.miraclesoft.com/library/CaseStudy/mft-changes-using-ibm-sterling-graphic-process-manager
+Redirect 301 /why/wbi-bpm.php http://www.miraclesoft.com/library/CaseStudy/wbi-bpm-migration-global-windows-retailer
+Redirect 301 /events/interconnect-2017.php http://www.miraclesoft.com/events/interconnect17
+Redirect 301 /ic17 http://www.miraclesoft.com/events/interconnect17
+Redirect 301 /interconnect17 http://www.miraclesoft.com/events/interconnect17
+Redirect 301 /IC http://www.miraclesoft.com/events/interconnect17
+Redirect 301 /IC2017 http://www.miraclesoft.com/events/interconnect17
+Redirect 301 /ic2017 http://www.miraclesoft.com/events/interconnect17
+Redirect 301 /IC17 http://www.miraclesoft.com/events/interconnect17
+Redirect 301 /interconnect2017 http://www.miraclesoft.com/events/interconnect17
+Redirect 301 /IC17 http://www.miraclesoft.com/events/interconnect17
+Redirect 301 /Interconnect17 http://www.miraclesoft.com/events/interconnect17
+Redirect 301 /Interconnect2017 http://www.miraclesoft.com/events/interconnect17
+Redirect 301 /Interconnect http://www.miraclesoft.com/events/interconnect17
+Redirect 301 /thelabs https://www.youtube.com/playlist?list=PLvHEcCoZg9xzlcG8ZFU2ZFzcZI7DD53N1
+
+Options +MultiViews
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+#RedirectMatch 301 (.*)\.php$ http://www.miraclesoft.com$1

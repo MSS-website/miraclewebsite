@@ -1,0 +1,949 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=display-width, initial-scale=1.0, maximum-scale=1.0,">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans">
+    <title>Girls in IT - IoT Workshop</title>
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+      html { width: 100%; }
+      body {margin:0; padding:0; width:100%; -webkit-text-size-adjust:none; -ms-text-size-adjust:none;}
+      img { display: block !important; border:0; -ms-interpolation-mode:bicubic;}
+      .ReadMsgBody { width: 100%;}
+      .ExternalClass {width: 100%;}
+      .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; }
+      .images {display:block !important; width:100% !important;}
+      .Heading {font-family: 'Open Sans' !important;}	
+      .MsoNormal {font-family:'Open Sans'!important;}			
+      p {margin:0 !important; padding:0 !important;}	
+      .display-button td, .display-button a  {font-family: 'Open Sans'!important;}
+      .display-button a:hover {text-decoration:none !important;}	
+      
+      @media only screen and (max-width:800px)
+      {
+      body {width:auto !important;}
+      table[class=display-width] {width:100% !important;}	
+      .res-padding { padding:0 20px !important; }	
+      table[class=display-width-inner] {width:600px !important;}
+      .about-height { display:none !important; }	
+      }
+      @media only screen and (max-width:639px)
+      { 		
+      table[class=display-width-inner], table[class=display-width-child] {width:100% !important;}
+      .res-padding { padding:0 30px !important; }	
+      .height-space{height :30px !important;}
+      .txt-center{ text-align:center !important; }
+      .imagecenter {margin:0 auto !important;}
+      td[class=hide-height] {display:none !important;}
+      .res-height{ height:40px !important; }
+      .res-bottom-height{ height:60px !important; }
+      .padding-hide{padding:0 !important;}
+      .image-hide {display:none !important;}
+      .add-height {height:40px !important;}
+      table[class=display-width-child] .subscribe {width:282px !important;}
+      table[class=display-width-child] .price {width:230px !important;}
+      table[class=display-width-child] .trial {width:140px !important;}
+      }
+      @media only screen and (max-width:480px)
+      {
+      table[class=display-width] table {width:100% !important;}
+      table[class=display-width] .button-width .display-button {width:auto !important;}
+      td[class=hide-menu-height] { display:none !important; }
+      td[class=menu-height] { height: 30px !important; }
+      .txt-center{ text-align:center !important; }
+      .imagecenter {margin:0 auto !important;}
+      table[class=display-width-child] .subscribe {width:282px !important;}
+      table[class=display-width-child] .price {width:230px !important;}
+      }
+      @media only screen and (max-width:350px)
+      {
+      .txt-center{ text-align:center !important; }
+      .imagecenter {margin:0 auto !important;}
+      table[class=display-width-child] .subscribe {width:100% !important;}
+      }
+      @media only screen and (max-width:300px)
+      {
+      .heading {font-size: 23px !important;}
+      .subheading	{font-size: 22px !important;}
+      }
+      @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800);
+      @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+      html { width: 100%; }
+      body {margin:0; padding:0; width:100%; -webkit-text-size-adjust:none; -ms-text-size-adjust:none;}
+      img {display:block !important; border:0; -ms-interpolation-mode:bicubic;}
+      .ReadMsgBody { width: 100%;}
+      .ExternalClass {width: 100%;}
+      .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; }
+      .Heading {font-family:'Open Sans'!important;}
+      .MsoNormal {font-family:'Open Sans' !important;}
+      p {margin:0 !important; padding:0 !important;}
+      .images {display:block !important; width:100% !important;}
+      .display-button td, .display-button a {font-family:'Open Sans' !important;}
+      .display-button a:hover {text-decoration:none !important;}
+      
+      @media only screen and (max-width:680px)
+      {
+      table[class=display-width-main] {width:100% !important;}
+      }
+      @media only screen and (max-width:639px)
+      {
+      body {width:auto !important;}
+      table[class=display-width], .display-width {width:100% !important;}
+      table[class=other-width] {width:300px !important;}
+      table[class=display-width] .simple{width:294px !important;}
+      td[class="hide-height"] {display:none !important;}				
+      .text-center{ text-align:center !important; }
+      .text-padding { padding:10px 0 !important; }
+      .res-height {height:60px !important;}
+      .height40 {height:40px !important;}
+      .height30 {height:30px !important;}
+      .width30 {width:30px !important;}
+      .res-padding { padding:0 20px !important; }	
+      .price{width:190px !important;}
+      }
+      @media only screen and (max-width:480px)
+      {
+      table[class=display-width] table {width:100% !important;}
+      table[class=display-width] .button-width .display-button {width:auto !important;}
+      table[class=display-width] .price{width:190px !important;}
+      table[class=display-width] .simple{width:294px !important;}
+      td[class="hide-height"] {display:none !important;}
+      .height40 {height:40px !important;}
+      .height30 {height:30px !important;}
+      }
+      @media only screen and (max-width:350px)
+      {
+      table[class=display-width] .simple{width:100% !important;}
+      table[class=display-width] .price{width:190px !important;}
+      td[class="hide-height"] {display:none !important;}
+      .height40 {height:40px !important;}
+      .height30 {height:30px !important;}
+      }
+    </style>
+  </head>
+  <body marginwidth="0" marginheight="0" style="margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0; width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;" offset="0" topmargin="0" leftmargin="0">
+    <div id="edit_link" class="hidden" style="display: none;">
+      
+      <div class="close_link"></div>
+     
+      <input type="text" id="edit_link_value" class="createlink" placeholder="Your URL">
+     
+      <div id="change_image_wrapper">
+      
+        <div id="change_image">
+      
+          <p id="change_image_button">Change &nbsp; <span class="pixel_result"></span></p>
+        </div>
+      
+        <input type="button" value="" id="change_image_link">
+      
+        <input type="button" value="" id="remove_image">
+      </div>
+      
+      <div id="tip"></div>
+    </div>
+    <table align="center" bgcolor="#333333" border="0" cellpadding="0" cellspacing="0" width="100%" data-module="Header" data-bgcolor="Main BG">
+      <tbody>
+        <tr>
+          <td align="center">
+            <table align="center" bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" class="display-width" width="800" data-bgcolor="Optional Bg">
+              <tbody>
+                <tr>
+                  <td align="center">
+                    
+                        <div style="margin:auto;">
+                          <table align="center" background="https://newsletters-2017-vnallamalla.c9users.io/February/Images/03.jpg" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-image: url(https://newsletters-2017-vnallamalla.c9users.io/February/Images/03.jpg); background-position: center center; background-repeat: no-repeat;" data-bg="Header BG Image">
+                            <tbody>
+                              <tr>
+                                <td align="center" class="res-padding">
+                                  <table align="center" border="0" class="display-width-inner" cellpadding="0" cellspacing="0" width="600">
+                                    <tbody>
+                                      <tr>
+                                        <td height="40"></td>
+                                      </tr>
+                                      <tr>
+                                        <td align="center">
+                                          <a href="http://www.miraclesoft.com/" target="blank">
+                                          <img src="http://www.miraclesoft.com/images/newsletters/Q2/miracle-logo-light.png" alt="logo" width="auto" height="80">
+                                        </a></td>
+                                      </tr>
+                                      <tr>
+                                        <td height="40"></td>
+                                      </tr>
+                                      <tr>
+                                        <td align="center">
+                                          <table align="center" border="0" cellpadding="0" cellspacing="0" class="display-width" style=" mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                                            <tbody>
+                                              <tr>
+                                                <td align="left">
+                                                  <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:auto !important; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                                                    <tbody>
+                                                      <tr>
+                                                        <td align="center">
+                                                          <table class="display-width" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                            <tbody>
+                                                              <tr>
+                                                                <td class="MsoNormal" style="color:#ffffff; font-family:'Open Sans'; font-weight:700; text-transform:normal; font-size:40px; line-height:40px; " align="center">
+                                                                  <span data-color="Header-2 Heading-1" data-size="Header-2 Heading-1" data-min="12" data-max="50"></span> 
+                                                                  <span style="color:#ffffff; font-weight:700;" data-color="Header-2 Heading-2" data-size="Header-2 Heading-2" data-min="12" data-max="50">
+Girls in IT - IoT Workshop                                                                  </span>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td height="10"></td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td style="padding:0 20px;" align="center">
+                                                                  <img editable="" label="image" src="http://www.miraclesoft.com/images/newsletters/heading-divider-img.png" alt="heading-divider-img" width="200" height="auto" border="0" style="display: inline-block;">
+                                                                  <table class="display-width" width="250" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                                    <tbody>
+                                                                      <tr>
+                                                                      </tr>
+                                                                    </tbody>
+                                                                  </table>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                              </tr>
+                                                              <tr>
+                                                                <td class="MsoNormal" style="color:#ffffff; font-family:Open Sans; font-weight:200; text-transform:normal; font-size:20x; line-height:40px; " align="center">
+                                                                  <span data-color="Header-2 Heading-1" data-size="Header-2 Heading-1" data-min="12" data-max="50"></span> <span style="color:#ffffff; font-weight:600;" data-color="Header-2 Heading-2" data-size="Header-2 Heading-2" data-min="12" data-max="50">
+Connecting an OBD II Simulator to the Cloud
+                                                                  </span>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td height="20"></td>
+                                                              </tr>
+                                                            </tbody>
+                                                          </table>
+                                                        </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td class="button-width" align="center">
+                                                          <table class="button" style="border-radius:50px;" data-bgcolor="Header-2 Button BG" cellspacing="0" cellpadding="0" border="0" bgcolor="#00aae7" align="center">
+                                                            <tbody>
+                                                              <tr>
+                                                                <td class="button" style="color:#ffffff;font-family:Open Sans;font-weight:400;padding: 10px 30px;text-transform:uppercase;font-size: 14px;" align="center">
+                                                                  <a href="https://www.meetup.com/Vizag-Bluemix-User-Group/events/238109665/" target="blank" style="color:#ffffff; text-decoration:none;" data-color="Header-2 Button Text" data-size="Header-2 Button Text" data-min="12" data-max="33">
+                                                                  <b>RSVP Today</b></a>
+                                                                </td>
+                                                              </tr>
+                                                            </tbody>
+                                                          </table>
+                                                        </td>
+                                                       
+                                                      </tr>
+                                                      <tr>
+                                                        <td height="40"></td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table align="center" bgcolor="#333333" border="0" cellpadding="0" cellspacing="0" width="100%" data-module="More Futuristic" data-bgcolor="Main BG">
+      <tbody>
+        <tr>
+          <td align="center">
+            <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="display-width" width="800" data-bgcolor="Section-1 BG">
+              <tbody>
+                <tr>
+                  <td align="center" class="res-padding">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="display-width-inner" width="600">
+                      <tbody>
+                        <tr>
+                                                                                <td width="600" align="center" valign="top">
+                                                                                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td align="center" valign="top" style="padding:0 10px">
+                                                                                                    <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
+                                                                                                        <tbody>
+                                                                                                            <tr>
+                                                                                                                <td align="center" valign="top" style="font-size:0!important">
+                                                                                                                    <div style="width:100%;display:inline-block;vertical-align:top;font-size:normal;max-width:190px" class="block">
+                                                                                                                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                                                                                            <tbody>
+                                                                                                                                <tr>
+                                                                                                                                    <td align="center" valign="top" style="padding:0 10px">
+                                                                                                                                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                                                                                                            <tbody>
+                                                                                                                                                <tr>
+                                                                                                                                                    <td style="padding-top:30px;line-height:0"></td>
+                                                                                                                                                </tr>
+                                                                                                                                            </tbody>
+                                                                                                                                        </table>
+                                                                                                                                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                                                                                                            <tbody>
+                                                                                                                                                <tr>
+                                                                                                                                                    <td align="center" valign="top" style="line-height:0!important">
+                                                                                                                                                        <img src="http://www.miraclesoft.com/images/newsletters/2016/november/date_DS.png" alt="" width="90">
+                                                                                                                                                    </td>
+                                                                                                                                                </tr>
+                                                                                                                                            </tbody>
+                                                                                                                                        </table>
+                                                                                                                                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                                                                                                            <tbody>
+                                                                                                                                                <tr>
+                                                                                                                                                    <td style="padding-top:17px;line-height:0"></td>
+                                                                                                                                                </tr>
+                                                                                                                                            </tbody>
+                                                                                                                                        </table>
+                                                                                                                                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                                                                                                            <tbody>
+                                                                                                                                                <tr>
+                                                                                                                                                    <td align="center" valign="top" style="color:#232527;font-family:'Open Sans';font-size:16px;mso-line-height-rule:exactly;line-height:30px;font-weight:700;text-transform:normal">
+                                                                                                                                                        March 11th, 2017
+                                                                                                                                                    </td>
+                                                                                                                                                </tr>
+                                                                                                                                            </tbody>
+                                                                                                                                        </table>
+                                                                                                                                    </td>
+                                                                                                                                </tr>
+                                                                                                                            </tbody>
+                                                                                                                        </table>
+                                                                                                                    </div>
+                                                                                                                    <div style="width:100%;display:inline-block;vertical-align:top;font-size:normal;max-width:190px" class="block">
+                                                                                                                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                                                                                            <tbody>
+                                                                                                                                <tr>
+                                                                                                                                    <td align="center" valign="top" style="padding:0 10px">
+                                                                                                                                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                                                                                                            <tbody>
+                                                                                                                                                <tr>
+                                                                                                                                                    <td style="padding-top:30px;line-height:0"></td>
+                                                                                                                                                </tr>
+                                                                                                                                            </tbody>
+                                                                                                                                        </table>
+                                                                                                                                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                                                                                                            <tbody>
+                                                                                                                                                <tr>
+                                                                                                                                                    <td align="center" valign="top" style="line-height:0!important">
+                                                                                                                                                        <img src="http://www.miraclesoft.com/images/newsletters/2016/november/time1.png" alt="" width="90">
+                                                                                                                                                    </td>
+                                                                                                                                                </tr>
+                                                                                                                                            </tbody>
+                                                                                                                                        </table>
+                                                                                                                                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                                                                                                            <tbody>
+                                                                                                                                                <tr>
+                                                                                                                                                    <td style="padding-top:17px;line-height:0"></td>
+                                                                                                                                                </tr>
+                                                                                                                                            </tbody>
+                                                                                                                                        </table>
+                                                                                                                                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                                                                                                            <tbody>
+                                                                                                                                                <tr>
+                                                                                                                                                    <td align="center" valign="top" style="color:#232527;font-family:'Open Sans';font-size:16px;mso-line-height-rule:exactly;line-height:30px;font-weight:700;text-transform:normal">
+                                                                                                                                                        10:00 AM
+                                                                                                                                                    </td>
+                                                                                                                                                </tr>
+                                                                                                                                            </tbody>
+                                                                                                                                        </table>
+                                                                                                                                    </td>
+                                                                                                                                </tr>
+                                                                                                                            </tbody>
+                                                                                                                        </table>
+                                                                                                                    </div>
+                                                                                                                    <div style="width:100%;display:inline-block;vertical-align:top;font-size:normal;max-width:190px" class="block">
+                                                                                                                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                                                                                            <tbody>
+                                                                                                                                <tr>
+                                                                                                                                    <td align="center" valign="top" style="padding:0 10px">
+                                                                                                                                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                                                                                                            <tbody>
+                                                                                                                                                <tr>
+                                                                                                                                                    <td style="padding-top:30px;line-height:0"></td>
+                                                                                                                                                </tr>
+                                                                                                                                            </tbody>
+                                                                                                                                        </table>
+                                                                                                                                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                                                                                                            <tbody>
+                                                                                                                                                <tr>
+                                                                                                                                                    <td align="center" valign="top" style="line-height:0!important">
+                                                                                                                                                        <img src="http://www.miraclesoft.com/images/newsletters/2016/november/location1.png" alt="" width="90">
+                                                                                                                                                    </td>
+                                                                                                                                                </tr>
+                                                                                                                                            </tbody>
+                                                                                                                                        </table>
+                                                                                                                                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                                                                                                            <tbody>
+                                                                                                                                                <tr>
+                                                                                                                                                    <td style="padding-top:17px;line-height:0"></td>
+                                                                                                                                                </tr>
+                                                                                                                                            </tbody>
+                                                                                                                                        </table>
+                                                                                                                                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                                                                                                            <tbody>
+                                                                                                                                                <tr>
+                                                                                                                                                    <td align="center" valign="top" style="color:#232527;font-family:'Open Sans';font-size:16px;mso-line-height-rule:exactly;line-height:30px;font-weight:700;text-transform:normal">
+                                                                                                                                                        Miracle Heights
+                                                                                                                                                    </td>
+                                                                                                                                                </tr>
+                                                                                                                                            </tbody>
+                                                                                                                                        </table>
+                                                                                                                                    </td>
+                                                                                                                                </tr>
+                                                                                                                            </tbody>
+                                                                                                                        </table>
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                        </tbody>
+                                                                                                    </table>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                        <tr>
+                          <td height="20"></td>
+                        </tr>
+                        <tr>
+                          <td align="justify" class="MsoNormal" style="color:#666666; font-family : 'Open Sans'; font-size:15px; line-height:30px;" data-color="Content" data-size="Content" data-min="12" data-max="34">
+                           <b>Technology is the future - and you are the leaders of technology!</b> Day-by-day the number of women in IT are growing up and are making a great impact on society. So, there is an exciting news for all the women out there, Miracle brings to you an interactive workshop on IoT (Internet of Things) on <b style="color:#00aae7; font-family : 'Open Sans'; font-size:15px; line-height:30px;">March 11th, 2017</b>
+from <b style="color:#00aae7; font-family : 'Open Sans'; font-size:15px; line-height:30px;">10:00 AM to 03:00 PM</b> at <b style="color:#ef4048; font-family : 'Open Sans'; font-size:15px; line-height:30px;">Miracle Heights</b>,  Rushikonda, exclusively for the ladies as part of our Women's Day celebrations.
+</td>
+                        </tr>
+                        <tr>
+                          <td height="5"></td>
+                        </tr>
+                        <tr>
+                          <td align="justify" class="MsoNormal" style="color:#666666; font-family : 'Open Sans'; font-size:15px; line-height:30px;" data-color="Content" data-size="Content" data-min="12" data-max="34">
+The attendees will get to learn the latest and trending technologies through the hands-on labs and sessions, which will be a great opportunity for students and professionals to gain immense knowledge. So, come and join us to explore the world of IT. Why the wait? <b>RSVP today and share the message with your friends, see you all at the event :)</b>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="15"></td>
+                        </tr>
+                        
+                        <tr>
+                          <td class="button-width" align="left">
+                            <table class="button" style="border-radius:50px;" data-bgcolor="Header-2 Button BG" cellspacing="0" cellpadding="0" border="0" bgcolor="#00aae7" align="left">
+                              <tbody>
+                                <tr>
+                                  <td class="button" style="color:#ffffff;font-family:Open Sans;font-weight:400;padding: 10px 30px;text-transform:uppercase;font-size: 14px;" align="center">
+                                    <a href="https://www.meetup.com/Vizag-Bluemix-User-Group/events/238109665/" target="blank" style="color:#ffffff; text-decoration:none;" data-color="Header-2 Button Text" data-size="Header-2 Button Text" data-min="12" data-max="33">
+                                    <b>RSVP NOW</b></a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                          
+                        </tr>
+                        <tr> <td height="15"></td></tr>
+                        <tr>
+                          <td align="justify" class="MsoNormal" style="color:#666666; font-family : 'Open Sans'; font-size:15px; line-height:30px;" data-color="Content" data-size="Content" data-min="12" data-max="34">
+ <b style="color:#ef4048; font-family : 'Open Sans'; font-size:15px; line-height:30px;"><i>Note :</i> </b><i>Attendees are required to bring laptops to participate in the hands-on lab!</i>
+                          </td><td align="justify" class="MsoNormal" style="color:#666666; font-family : 'Open Sans'; font-size:15px; line-height:30px;" data-color="Content" data-size="Content" data-min="12" data-max="34">
+
+                        </tr>
+                        <tr> <td height="20"></td></tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table align="center" bgcolor="#333333" border="0" cellpadding="0" cellspacing="0" width="100%" data-module="Header" data-bgcolor="Main BG">
+      <tbody>
+        <tr>
+          <td align="center">
+            <table align="center" bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" class="display-width" width="800" data-bgcolor="Optional Bg">
+              <tbody>
+                <tr>
+                  <td align="center">
+                   
+                        <div style="margin:auto;">
+                          <table align="center" background="https://www.miraclesoft.com/images/newsletters/2017/February/bluemix1.png" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-image: url(https://www.miraclesoft.com/images/newsletters/2017/February/bluemix1.png); background-position: center center; background-repeat: no-repeat;" data-bg="Header BG Image">
+                            <tbody>
+                              <tr>
+                                <td align="center" class="res-padding">
+                                  <table align="center" border="0" class="display-width-inner" cellpadding="0" cellspacing="0" width="600">
+                                    <tbody>
+                                      <tr>
+                                        <td height="30"></td>
+                                      </tr>
+                                      <tr>
+                                        <td align="center">
+                                          <table align="center" border="0" cellpadding="0" cellspacing="0" class="display-width" style=" mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                                            <tbody>
+                                              <tr>
+                                                <td align="left">
+                                                  <table align="left" border="0" cellpadding="0" cellspacing="0" style="width:auto !important; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                                                    <tbody>
+                                                      <tr>
+                                                        <td align="center">
+                                                          <table class="display-width" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                            <tbody>
+                                                              <tr>
+                                                                <td>
+                                                                  
+                                                                  <table align="left" border="0" cellspacing="0" cellpadding="0" class="display-width" width="31%" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                                                                    <tbody>
+                                                                      <tr>
+                                                                        <td align="center">
+                                                                          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border:2px solid #ffffff; border-radius:5px; width:190px !important;" data-border-top-color="3Column-1 Border" data-border-left-color="3Column-1 Border" data-border-right-color="3Column-1 Border" data-border-bottom-color="3Column-1 Border">
+                                                                            <tbody>
+                                                                              <tr>
+                                                                                <td height="20"></td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                <td align="center">
+                                                                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="95%" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                                                                                    <tbody>
+                                                                                      <tr>
+                                                                                        <td align="center" style="color:#666666; line-height:0;">
+                                                                                          <img src="http://www.miraclesoft.com/images/newsletters/2017/February/learn2.png" alt="48x48x1" width="48" height="48" style="margin:0; padding:0; border:0;">
+                                                                                        </td>
+                                                                                      </tr>
+                                                                                      <tr>
+                                                                                        <td height="20"></td>
+                                                                                      </tr>
+                                                                                      <tr>
+                                                                                        <td align="center" class="Heading" style="color:#ffffff; font-family:'Open Sans'; font-weight:600; text-transform:uppercase; font-size:16px; line-height:24px; " data-color="3Column-1 Heading" data-size="3Column-1 Heading" data-min="12" data-max="36">
+                                                                                          Learn
+                                                                                        </td>
+                                                                                      </tr>
+                                                                                    </tbody>
+                                                                                  </table>
+                                                                                </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                <td height="20"></td>
+                                                                              </tr>
+                                                                            </tbody>
+                                                                          </table>
+                                                                        </td>
+                                                                      </tr>
+                                                                    </tbody>
+                                                                  </table>
+                                                                  
+                                                                  <table align="left" border="0" cellpadding="0" cellspacing="0" class="display-width" width="15" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                                                                    <tbody>
+                                                                      <tr>
+                                                                        <td width="30" height="40"></td>
+                                                                      </tr>
+                                                                    </tbody>
+                                                                  </table>
+                                                                  
+                                                                  <table align="left" border="0" cellspacing="0" cellpadding="0" class="display-width" width="31%" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                                                                    <tbody>
+                                                                      <tr>
+                                                                        <td align="center">
+                                                                          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border:2px solid #ffffff; border-radius:5px; width:190px !important;" data-border-top-color="3Column-1 Border" data-border-left-color="3Column-1 Border" data-border-right-color="3Column-1 Border" data-border-bottom-color="3Column-1 Border">
+                                                                            <tbody>
+                                                                              <tr>
+                                                                                <td height="20"></td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                <td align="center">
+                                                                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="95%" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                                                                                    <tbody>
+                                                                                      <tr>
+                                                                                        <td align="center" style="color:#666666; line-height:0;">
+                                                                                          <img src="http://www.miraclesoft.com/images/newsletters/2017/February/explore1.png" alt="48x48x2" width="48" height="48" style="margin:0; padding:0; border:0;">
+                                                                                        </td>
+                                                                                      </tr>
+                                                                                      <tr>
+                                                                                        <td height="20"></td>
+                                                                                      </tr>
+                                                                                      <tr>
+                                                                                        <td align="center" class="Heading" style="color:#ffffff; font-family:'Open Sans'; font-weight:600; text-transform:uppercase; font-size:16px; line-height:24px; " data-color="3Column-1 Heading" data-size="3Column-1 Heading" data-min="12" data-max="36">
+                                                                                          Explore
+                                                                                        </td>
+                                                                                      </tr>
+                                                                                    </tbody>
+                                                                                  </table>
+                                                                                </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                <td height="20"></td>
+                                                                              </tr>
+                                                                            </tbody>
+                                                                          </table>
+                                                                        </td>
+                                                                      </tr>
+                                                                    </tbody>
+                                                                  </table>
+                                                                  
+                                                                  <table align="left" border="0" cellpadding="0" cellspacing="0" class="display-width" width="15" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                                                                    <tbody>
+                                                                      <tr>
+                                                                        <td width="30" height="40"></td>
+                                                                      </tr>
+                                                                    </tbody>
+                                                                  </table>
+                                                                  
+                                                                  <table align="right" border="0" cellspacing="0" cellpadding="0" class="display-width" width="31%" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                                                                    <tbody>
+                                                                      <tr>
+                                                                        <td align="center">
+                                                                          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border:2px solid #ffffff; border-radius:5px; width:190px !important;" data-border-top-color="3Column-1 Border" data-border-left-color="3Column-1 Border" data-border-right-color="3Column-1 Border" data-border-bottom-color="3Column-1 Border">
+                                                                            <tbody>
+                                                                              <tr>
+                                                                                <td height="20"></td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                <td align="center">
+                                                                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="95%" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                                                                                    <tbody>
+                                                                                      <tr>
+                                                                                        <td align="center" style="color:#ffffff; line-height:0;">
+                                                                                          <img src="http://www.miraclesoft.com/images/newsletters/2017/February/gain1.png" alt="48x48x3" width="48" height="48" style="margin:0; padding:0; border:0;">
+                                                                                        </td>
+                                                                                      </tr>
+                                                                                      <tr>
+                                                                                        <td height="20"></td>
+                                                                                      </tr>
+                                                                                      <tr>
+                                                                                        <td align="center" class="Heading" style="color:#ffffff; font-family:'Open Sans'; font-weight:600; text-transform:uppercase; font-size:16px; line-height:24px; " data-color="3Column-1 Heading" data-size="3Column-1 Heading" data-min="12" data-max="36">
+                                                                                          Gain
+                                                                                        </td>
+                                                                                      </tr>
+                                                                                    </tbody>
+                                                                                  </table>
+                                                                                </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                <td height="20"></td>
+                                                                              </tr>
+                                                                            </tbody>
+                                                                          </table>
+                                                                        </td>
+                                                                      </tr>
+                                                                    </tbody>
+                                                                  </table>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td height="10"></td>
+                                                              </tr>
+                                                              <tr>
+                                                              </tr>
+                                                            </tbody>
+                                                          </table>
+                                                        </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td height="20"></td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table align="center" bgcolor="#333333" border="0" cellpadding="0" cellspacing="0" width="100%" data-module="More Futuristic" data-bgcolor="Main BG">
+      <tbody>
+        <tr>
+          <td align="center">
+            <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="display-width" width="800" data-bgcolor="Section-1 BG">
+              <tbody>
+                <tr>
+                  <td align="center" class="res-padding">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="display-width-inner" width="600">
+                      <tbody>
+                        <tr>
+                          <td height="20"></td>
+                        </tr>
+                        <tr>
+                          <td align="center" class="Heading" style="color:#333333; font-family : 'Open Sans'; font-weight:400; font-size:30px; line-height:45px; " data-color="Title" data-size="Title" data-min="12" data-max="60">
+                            What We Are!
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="5"></td>
+                        </tr>
+                        <tr>
+                          <td align="center">
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:auto !important;">
+                              <tbody>
+                                <tr>
+                                  <td align="center">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="50">
+                                      <tbody>
+                                        <tr>
+                                          <td style="line-height:0px; font-size:0px;" data-bgcolor="Main Title Underline" bgcolor="#ef4048" height="3">
+                                            &nbsp;
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="20"></td>
+                        </tr>
+                        <tr>
+                          <td align="justify" class="MsoNormal" style="color:#666666; font-family : 'Open Sans'; font-size:15px; line-height:30px;" data-color="Content" data-size="Content" data-min="12" data-max="34">
+                            <b>Miracle Software Systems</b>, Inc. is a Global Systems Integrator headquartered in Novi, Michigan. With over 23 years of industry experience since 1994, Miracle and its team of 2500 employees has been helping numerous Fortune 1000 customers globally to achieve their business goals through technology.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="20"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table align="center" bgcolor="#333333" border="0" cellpadding="0" cellspacing="0" width="100%" data-module="Footer" data-bgcolor="Main BG">
+      <tbody>
+        <tr>
+          <td align="center">
+            <table align="center" bgcolor="#050F15" border="0" cellpadding="0" cellspacing="0" class="display-width" width="800" data-bgcolor="Footer Section BG">
+              <tbody>
+                <tr>
+                  <td align="center" class="res-padding">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="display-width-inner" width="600">
+                      <tbody>
+                        <tr>
+                          <td height="30"></td>
+                        </tr>
+                        <tr>
+                          <td align="center">
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:auto;">
+                              <tbody>
+                                <tr>
+                                  <td align="center">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:auto !important;">
+                                      <tbody>
+                                        <tr>
+                                          <td style="font-size:0!important" align="center" valign="top" width="600">
+                                            <div style="width:100%;display:inline-block;vertical-align:top;font-size:normal;max-width:60px">
+                                              <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                  <tr>
+                                                    <td style="padding:0 10px" align="center" valign="top">
+                                                      <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tbody>
+                                                          <tr>
+                                                            <td style="height:10px;line-height:10px" height="10"></td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td style="line-height:0!important" align="center" valign="top">
+                                                              <a style="text-decoration:none;display:inline-block" href="https://facebook.com/miracle45625" target="blank">
+                                                              <img src="http://www.miraclesoft.com/images/newsletters/2016/September/facebook-1.png" alt="socials1" width="40">
+                                                              </a>
+                                                            </td>
+                                                          </tr>
+                                                        </tbody>
+                                                      </table>
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </div>
+                                            <div style="width:100%;display:inline-block;vertical-align:top;font-size:normal;max-width:60px">
+                                              <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                  <tr>
+                                                    <td style="padding:0 10px" align="center" valign="top">
+                                                      <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tbody>
+                                                          <tr>
+                                                            <td style="height:10px;line-height:10px" height="10"></td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td style="line-height:0!important" align="center" valign="top">
+                                                              <a style="text-decoration:none;display:inline-block" href="https://plus.google.com/104381127288956493644" target="blank">
+                                                              <img src="http://www.miraclesoft.com/images/newsletters/2016/September/google-plus-2.png" alt="socials1" width="40">
+                                                              </a>
+                                                            </td>
+                                                          </tr>
+                                                        </tbody>
+                                                      </table>
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </div>
+                                            <div style="width:100%;display:inline-block;vertical-align:top;font-size:normal;max-width:60px">
+                                              <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                  <tr>
+                                                    <td style="padding:0 10px" align="center" valign="top">
+                                                      <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tbody>
+                                                          <tr>
+                                                            <td style="height:10px;line-height:10px" height="10"></td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td style="line-height:0!important" align="center" valign="top">
+                                                              <a style="text-decoration:none;display:inline-block" href="https://www.linkedin.com/company/miracle-software-systems-inc" target="blank">
+                                                              <img src="http://www.miraclesoft.com/images/newsletters/2016/September/linkedin-2.png" alt="socials1" width="40">
+                                                              </a>
+                                                            </td>
+                                                          </tr>
+                                                        </tbody>
+                                                      </table>
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </div>
+                                            <div style="width:100%;display:inline-block;vertical-align:top;font-size:normal;max-width:60px">
+                                              <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                  <tr>
+                                                    <td style="padding:0 10px" align="center" valign="top">
+                                                      <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tbody>
+                                                          <tr>
+                                                            <td style="height:10px;line-height:10px" height="10"></td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td style="line-height:0!important" align="center" valign="top">
+                                                              <a style="text-decoration:none;display:inline-block" href="https://www.flickr.com/photos/team_miracle" target="blank">
+                                                              <img src="http://www.miraclesoft.com/images/newsletters/2016/September/flickr-1.png" alt="socials1" width="40">
+                                                              </a>
+                                                            </td>
+                                                          </tr>
+                                                        </tbody>
+                                                      </table>
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </div>
+                                            <div style="width:100%;display:inline-block;vertical-align:top;font-size:normal;max-width:60px">
+                                              <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                  <tr>
+                                                    <td style="padding:0 10px" align="center" valign="top">
+                                                      <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tbody>
+                                                          <tr>
+                                                            <td style="height:10px;line-height:10px" height="10"></td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td style="line-height:0!important" align="center" valign="top">
+                                                              <a style="text-decoration:none;display:inline-block" href="https://twitter.com/Team_MSS" target="blank">
+                                                              <img src="http://www.miraclesoft.com/images/newsletters/2016/September/twitter-2.png" alt="socials2" width="40">
+                                                              </a>
+                                                            </td>
+                                                          </tr>
+                                                        </tbody>
+                                                      </table>
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </div>
+                                            <div style="width:100%;display:inline-block;vertical-align:top;font-size:normal;max-width:60px">
+                                              <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                  <tr>
+                                                    <td style="padding:0 10px" align="center" valign="top">
+                                                      <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tbody>
+                                                          <tr>
+                                                            <td style="height:10px;line-height:10px" height="10"></td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td style="line-height:0!important" align="center" valign="top">
+                                                              <a style="text-decoration:none;display:inline-block" href="https://www.youtube.com/c/Team_MSS" target="blank">
+                                                              <img src="http://www.miraclesoft.com/images/newsletters/2016/September/youtube-3.png" alt="socials3" width="40">
+                                                              </a>
+                                                            </td>
+                                                          </tr>
+                                                        </tbody>
+                                                      </table>
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                        </tr>
+                        <tr>
+                          <td height="30"></td>
+                        </tr>
+                        <tr>
+                          <td class="MsoNormal" style="color:#666666; font-family: 'Open Sans'; font-size:14px; font-weight:400; line-height:24px; " align="center">
+                            <span style="color: rgb(255, 255, 255);" data-color="Copyright2" data-size="Copyright2" data-min="12" data-max="50">
+                               © Copyrights 2017 | Miracle Software Systems, Inc.</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="30"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
+</body></html>
